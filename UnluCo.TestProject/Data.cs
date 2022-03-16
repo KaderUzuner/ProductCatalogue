@@ -13,7 +13,6 @@ namespace UnluCo.TestProject
         public static IList<Product> GetProductData()
         {
 
-
             var result = new List<Product>
             {
                 new Product {ProductId = 1,  ProductName = "Çanta",Price=100},
@@ -23,7 +22,7 @@ namespace UnluCo.TestProject
 
             }.AsQueryable();
 
-            return result;
+            return (IList<Product>)result;
         }
 
         public static ProductDto GetProductDto()

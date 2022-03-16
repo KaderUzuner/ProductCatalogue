@@ -19,24 +19,19 @@ namespace ProductUnluCo.Application.Services
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        private IOfferableRepository _offerableRepository;
+    
 
-        public OfferableService(IUnitOfWork unitOfWork, IMapper mapper, IOfferableRepository offerableRepository)
+        public OfferableService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
-            _offerableRepository = offerableRepository;
+ 
         }
-
-
-
-
-
 
         public async Task Add(OfferableDto offerableDto)
         {
             var offerable = _mapper.Map<Offerable>(offerableDto);
-            await _offerableRepository.Add(offerable);
+            await _unitOfWork.Offerable.Add(offerable);
         
             await _unitOfWork.SaveChangesAsync();
         }
@@ -49,7 +44,6 @@ namespace ProductUnluCo.Application.Services
             _unitOfWork.SaveChangesAsync();
         }
 
-       
 
         public async Task<List<OfferableDto>> GetAll(Expression<Func<Offerable, bool>> filter = null)
         {

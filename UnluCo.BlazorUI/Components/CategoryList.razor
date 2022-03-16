@@ -1,0 +1,71 @@
+﻿@page "/categories/{Id:int}"
+@using ProductUnluCo.Application.Dto
+@using Newtonsoft.Json
+<h3>Categories</h3>
+
+@if (CategoryDto is null)
+{
+    <p>
+        Loading...
+
+    </p>
+
+}
+else
+{
+    <hr />
+
+    <div class="col">
+
+        <div class="row bg-light">
+          
+            <p class="col-4 m-1">Category Name: @CategoryDto.CategoryName</p>
+            <p class="col-4 m-1">Category Description: @CategoryDto.Description</p>
+
+        </div>
+        @if (CategoryDto.Products.Count > 0)
+        {
+            <div class="row bg-light">
+                @foreach (var product in CategoryView.Products)
+                {
+
+                    <p class="col-2 m-1">Id: @product.Id</p>
+                    <p class="col-2 m-1">Name: @product.Name</p>
+                    <p class="col-2 m-1">Price: @product.Price</p>
+                    <p class="col-2 m-1">Color: @product.Color.Name</p>
+                    <p class="col-2 m-1">Category: @product.Category.Title</p>
+                    <p class="col-2 m-1">Brand: @product.Brand.Name</p>
+                    <p class="col-2 m-1">User: @product.User.UserName</p>
+                    <hr class="bg-white" />
+
+                }
+
+            </div>
+        }
+        <hr class="bg-dark" />
+
+    </div>
+
+
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    public CategoryDto CategoryView { get; set; }
+
+    HttpClient client = new HttpClient();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var category = await client.GetAsync($"http://localhost:19383/api/Categories/{Id}");
+        CategoryView = JsonConvert.DeserializeObject<CategoryDto>(await category.Content.ReadAsStringAsync());
+
+    }
+
+
+
+}
+
+

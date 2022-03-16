@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace UnluCo.BlazorUI
+namespace UnluCo.BlazorUI.Components
 {
     #line hidden
     using System;
@@ -82,10 +82,10 @@ using UnluCo.BlazorUI.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class _Imports : System.Object
+    public partial class CategoryList : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
-        protected void Execute()
+        protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998

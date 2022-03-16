@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\UnluCo.WebApi\\UnluCo.WebApi.csproj": {}
+    "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\UnluCo.WebApi\\UnluCo.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj": {
+    "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj",
+        "projectUniqueName": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj",
         "projectName": "ProductUnluCo.Application",
-        "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj",
+        "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj",
         "packagesPath": "C:\\Users\\KADER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Application\\obj\\",
+        "outputPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KADER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj": {
-                "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj"
+              "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj": {
+                "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj"
               },
-              "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj"
+              "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj": {
+    "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj",
         "projectName": "ProductUnluCo.Domain",
-        "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj",
+        "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj",
         "packagesPath": "C:\\Users\\KADER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Domain\\obj\\",
+        "outputPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KADER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -143,14 +143,14 @@
         }
       }
     },
-    "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj": {
+    "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj",
         "projectName": "ProductUnluCo.Infrastructure",
-        "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\KADER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KADER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -167,8 +167,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj": {
-                "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj"
+              "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj": {
+                "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj"
               }
             }
           }
@@ -227,14 +227,14 @@
         }
       }
     },
-    "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\UnluCo.WebApi\\UnluCo.WebApi.csproj": {
+    "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\UnluCo.WebApi\\UnluCo.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\UnluCo.WebApi\\UnluCo.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\UnluCo.WebApi\\UnluCo.WebApi.csproj",
         "projectName": "UnluCo.WebApi",
-        "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\UnluCo.WebApi\\UnluCo.WebApi.csproj",
+        "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\UnluCo.WebApi\\UnluCo.WebApi.csproj",
         "packagesPath": "C:\\Users\\KADER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\UnluCo.WebApi\\obj\\",
+        "outputPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\UnluCo.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KADER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -251,14 +251,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj": {
-                "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj"
+              "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj": {
+                "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj"
               },
-              "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj": {
-                "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj"
+              "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj": {
+                "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj"
               },
-              "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj"
+              "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj"
               }
             }
           }

@@ -6342,11 +6342,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\UnluCo.RabbitMq\\UnluCo.RabbitMq.csproj",
+      "projectUniqueName": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\UnluCo.RabbitMq\\UnluCo.RabbitMq.csproj",
       "projectName": "UnluCo.RabbitMq",
-      "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\UnluCo.RabbitMq\\UnluCo.RabbitMq.csproj",
+      "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\UnluCo.RabbitMq\\UnluCo.RabbitMq.csproj",
       "packagesPath": "C:\\Users\\KADER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\UnluCo.RabbitMq\\obj\\",
+      "outputPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\UnluCo.RabbitMq\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KADER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6363,8 +6363,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj": {
-              "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj"
+            "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj": {
+              "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj"
             }
           }
         }

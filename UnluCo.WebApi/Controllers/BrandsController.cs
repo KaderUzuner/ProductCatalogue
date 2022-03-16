@@ -24,17 +24,10 @@ namespace UnluCo.WebApi.Controllers
         }
         [HttpGet]
         public async Task< IActionResult >Get()
-        {
-            try
-            {
-                
+        {        
                 var brands = await _brandService.GetAll();
                 return Ok(brands);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
+            
         }
 
         [HttpGet("{id}")]

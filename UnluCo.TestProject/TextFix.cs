@@ -10,18 +10,23 @@ namespace UnluCo.TestProject
 {
     public class TextFix
     {
-        public ProductDbContext Context { get; set; }
-
-        public TextFix()
+        public class TextFixture
         {
-            var options = new DbContextOptionsBuilder<ProductDbContext>()
-                .UseInMemoryDatabase(databaseName: "ProductTestDb").Options;
-            Context = new ProductDbContext(options);
+            public ProductDbContext Context { get; set; }
+
+            public TextFixture()
+            {
+                var options = new DbContextOptionsBuilder<ProductDbContext>()
+                    .UseInMemoryDatabase(databaseName: "ProductTestDb").Options;
+                Context = new ProductDbContext(options);
 
 
-            Context.Database.EnsureCreated();
-            Context.Products.AddRange(Data.GetProductData());
-            Context.SaveChanges();
+                Context.Database.EnsureCreated();
+                Context.Products.AddRange(Data.GetProductData());
+                Context.SaveChanges();
+            }
+
+
         }
     }
 }

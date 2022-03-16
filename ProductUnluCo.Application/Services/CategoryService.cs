@@ -17,13 +17,13 @@ namespace ProductUnluCo.Application.Services
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        private ICategoryRepository _categoryRepository;
+      
 
-        public CategoryService(IUnitOfWork unitOfWork, IMapper mapper, ICategoryRepository categoryRepository)
+        public CategoryService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
-            _categoryRepository = categoryRepository;
+          
         }
 
         public async Task Add(CategoryDto categoryDto)
@@ -67,7 +67,7 @@ namespace ProductUnluCo.Application.Services
         public void Update(CategoryDto categoryDto)
         {
             var category = _mapper.Map<Category>(categoryDto);
-            _categoryRepository.Update(category);
+            _unitOfWork.Category.Update(category);
             _unitOfWork.SaveChangesAsync();
         }
     }

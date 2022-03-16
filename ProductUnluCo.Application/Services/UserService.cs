@@ -51,12 +51,12 @@ namespace ProductUnluCo.Application.Services
         }
 
 
-        public Task<UserDto> GetById(int id)
+        public  Task<UserDto> GetById(int id)
         {
             throw new NotImplementedException();
-            //var user = _unitOfWork.User.GetById(id).Result;
+            //var user = _unitOfWork.User.Get(x=>x.Id==id).Result;
             //var userModel = _mapper.Map<UserDto>(user);
-            //return await Task.FromResult(userModel);
+            //return await _unitOfWork.User(userModel);
         }
 
         public void Update(UserDto userDto)

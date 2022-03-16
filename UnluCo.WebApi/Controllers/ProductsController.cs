@@ -29,35 +29,22 @@ namespace UnluCo.WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            try
-            {
+
                
                 var products = await _productService.GetAll();
                 return Ok(products);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
+
         }
     
         [HttpPost]
         public async Task <IActionResult >AddProduct([FromBody] ProductDto productDto)
         {
-            try
-            {
+
                 ProductValidator validator = new ProductValidator();
                 validator.ValidateAndThrow(productDto);
                await _productService.Add(productDto);
                 return Ok();
-            }
-            catch (Exception e)
-            {
 
-                return BadRequest(e.Message);
-            }
-          
-           
         }
 
         [HttpGet("{id}")]
@@ -78,17 +65,10 @@ namespace UnluCo.WebApi.Controllers
         [HttpPut("{id}")]
         public IActionResult Put([FromBody] ProductDto productDto)
         {
-            try
-            {
-              
+
                 _productService.Update(productDto);
                 return Ok();
-            }
-            catch (Exception e)
-            {
 
-                return BadRequest(e.Message);
-            }
            
         }
 

@@ -27,33 +27,18 @@ namespace UnluCo.WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            try
-            {
-               
                 var categories = await _categoryService.GetAll();
                 return Ok(categories);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
         }
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] CategoryDto categoryDto)
         {
-            try
-            {
                  CategoryValidator validator = new CategoryValidator();
                 validator.ValidateAndThrow(categoryDto);
 
                  await _categoryService.Add(categoryDto);
                 return Ok();
-            }
-            catch (Exception e)
-            {
-
-                return BadRequest(e.Message);
-            }
+           
         }
 
         [HttpPut("{id}")]

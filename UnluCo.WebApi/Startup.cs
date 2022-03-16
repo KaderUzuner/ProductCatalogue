@@ -29,6 +29,8 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using UnluCo.WebApi.Middleware;
+
 ;
 
 namespace UnluCo.WebApi
@@ -66,6 +68,7 @@ namespace UnluCo.WebApi
             services.AddScoped<IUserService, UserService>();           
             services.AddScoped<IOfferableService, OfferableService>();
             
+            services.AddScoped<IRabbitMqService, RabbitMqService>();
             services.AddAuthentication(options =>
              {
                  options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -106,7 +109,7 @@ namespace UnluCo.WebApi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "UnluCo.WebApi v1"));
             }
-
+            app.UseMiddleware<ExceptionMiddleware>();
             app.UseHttpsRedirection();
 
             app.UseRouting();

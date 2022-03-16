@@ -6716,11 +6716,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj",
+      "projectUniqueName": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj",
       "projectName": "ProductUnluCo.Application",
-      "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj",
+      "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Application\\ProductUnluCo.Application.csproj",
       "packagesPath": "C:\\Users\\KADER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Application\\obj\\",
+      "outputPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KADER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6737,11 +6737,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj": {
-              "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj"
+            "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj": {
+              "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj"
             },
-            "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj"
+            "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Infrastructure\\ProductUnluCo.Infrastructure.csproj"
             }
           }
         }

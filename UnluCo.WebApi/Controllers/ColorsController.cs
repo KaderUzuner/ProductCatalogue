@@ -26,31 +26,19 @@ namespace UnluCo.WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            try
-            {
+ 
                 var colors = await _colorService.GetAll();
                 return Ok(colors);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
+          
         }
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] ColorDto colorDto)
         {
-            try
-            {
-                ColorValidator validator = new ColorValidator();
+               ColorValidator validator = new ColorValidator();
                 validator.ValidateAndThrow(colorDto);
                 await _colorService.Add(colorDto);
                 return Ok();
-            }
-            catch (Exception e)
-            {
-
-                return BadRequest(e.Message);
-            }
+           
         }
 
         [HttpPut("{id}")]

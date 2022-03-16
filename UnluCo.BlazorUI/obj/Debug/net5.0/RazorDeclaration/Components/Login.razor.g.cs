@@ -13,75 +13,104 @@ namespace UnluCo.BlazorUI.Components
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\KADER\Desktop\GithubNew\KaderUzunerUnluCo.Final\UnluCo.ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
+#line 1 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\KADER\Desktop\GithubNew\KaderUzunerUnluCo.Final\UnluCo.ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
+#line 2 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\KADER\Desktop\GithubNew\KaderUzunerUnluCo.Final\UnluCo.ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
+#line 3 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\KADER\Desktop\GithubNew\KaderUzunerUnluCo.Final\UnluCo.ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
+#line 4 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\KADER\Desktop\GithubNew\KaderUzunerUnluCo.Final\UnluCo.ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
+#line 5 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\KADER\Desktop\GithubNew\KaderUzunerUnluCo.Final\UnluCo.ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
+#line 6 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\KADER\Desktop\GithubNew\KaderUzunerUnluCo.Final\UnluCo.ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
+#line 7 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\KADER\Desktop\GithubNew\KaderUzunerUnluCo.Final\UnluCo.ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
+#line 8 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\KADER\Desktop\GithubNew\KaderUzunerUnluCo.Final\UnluCo.ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
+#line 9 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
 using UnluCo.BlazorUI;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\KADER\Desktop\GithubNew\KaderUzunerUnluCo.Final\UnluCo.ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
+#line 10 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\_Imports.razor"
 using UnluCo.BlazorUI.Shared;
 
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\Components\Login.razor"
+using ProductUnluCo.Application.Dto;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\Components\Login.razor"
+using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 9 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\Components\Login.razor"
+using UnluCo.FinalProject.BlazorUI.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 10 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\Components\Login.razor"
+using Newtonsoft.Json;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/login")]
     public partial class Login : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -89,6 +118,75 @@ using UnluCo.BlazorUI.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 63 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\Components\Login.razor"
+       
+    public UserDto Model { get; set; }
+    public string MyToken = "";
+
+    HttpClient client = new HttpClient();
+
+    protected override void OnInitialized()
+    {
+        Model = new UserDto();
+
+    }
+
+    public async void LoginAccount()
+    {
+
+        var request = new HttpRequestMessage();
+        request.RequestUri = new Uri("http://localhost:19383/api/AccountController/");
+        request.Method = HttpMethod.Post;
+
+        request.Headers.Add("Accept", "*/*");
+
+        var bodyString = JsonConvert.SerializeObject(Model);
+
+        var content = new StringContent(bodyString, System.Text.Encoding.UTF8, "application/json");
+        request.Content = content;
+
+        var response = await client.SendAsync(request);
+        if (response.Headers.Contains("token"))
+        {
+            var result = response.Headers.GetValues("token").First();
+            MyToken = JsonConvert.DeserializeObject<string>(result);
+
+        }
+
+        var claims = JwtParser.ParseClaimsFromJwt(MyToken);
+        
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 98 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\Components\Login.razor"
+         foreach (var item in claims)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", item.Type + item.Value + item.Issuer + item.OriginalIssuer);
+        }
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 101 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\Components\Login.razor"
+         
+
+        await Storage.SetAsync("token", MyToken);
+
+        await response.Content.ReadAsStringAsync();
+        await JsRuntime.InvokeVoidAsync("alert", "Success");
+    }
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ProtectedLocalStorage Storage { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JsRuntime { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavManager { get; set; }
     }
 }
 #pragma warning restore 1591

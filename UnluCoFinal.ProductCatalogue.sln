@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductUnluCo.Domain", "Pro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductUnluCo.Infrastructure", "ProductUnluCo.Infrastructure\ProductUnluCo.Infrastructure.csproj", "{99C242F6-9A20-4D86-B939-1BF27E735A5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnluCo.TestProject", "UnluCo.TestProject\UnluCo.TestProject.csproj", "{26263052-3FC4-4B54-91D6-0C3334F4B315}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnluCo.TestProject", "UnluCo.TestProject\UnluCo.TestProject.csproj", "{26263052-3FC4-4B54-91D6-0C3334F4B315}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

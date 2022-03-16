@@ -1732,11 +1732,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj",
       "projectName": "ProductUnluCo.Domain",
-      "projectPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj",
+      "projectPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Domain\\ProductUnluCo.Domain.csproj",
       "packagesPath": "C:\\Users\\KADER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KADER\\Desktop\\GithubNew\\KaderUzunerUnluCo.Final\\UnluCo.ProductCatalogue\\ProductUnluCo.Domain\\obj\\",
+      "outputPath": "C:\\Users\\KADER\\Desktop\\New\\ProductCatalogue\\ProductUnluCo.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KADER\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -29,19 +29,11 @@ namespace UnluCo.WebApi.Controllers
         public async Task< IActionResult >AddOfferable([FromBody] OfferableDto offerableDto)
         {
 
-            try
-            {
                 OfferableValidator validator = new OfferableValidator();
                 validator.ValidateAndThrow(offerableDto);
                 await _offerableService.Add(offerableDto);
                 return Ok();
-            }
-            catch (Exception e)
-            {
-
-                return BadRequest(e.Message);
-            }
-
+ 
 
         }
 

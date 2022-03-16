@@ -17,19 +17,19 @@ namespace ProductUnluCo.Application.Services
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        private IProductRepository _productRepository;
+     
 
-        public ProductService(IUnitOfWork unitOfWork, IMapper mapper, IProductRepository productRepository)
+        public ProductService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
-            _productRepository = productRepository;
+            
         }
 
         public async Task Add(ProductDto productDto)
         {
             var product = _mapper.Map<Product>(productDto);
-            await _productRepository.Add(product);
+            await _unitOfWork.Product.Add(product);
             _mapper.Map<ProductDto>(productDto);
             await _unitOfWork.SaveChangesAsync();
         }
