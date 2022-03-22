@@ -82,6 +82,21 @@ using UnluCo.BlazorUI.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\Components\CategoryList.razor"
+using ProductUnluCo.Application.Dto;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\Components\CategoryList.razor"
+using Newtonsoft.Json;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/categories/{Id:int}")]
     public partial class CategoryList : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -89,6 +104,29 @@ using UnluCo.BlazorUI.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 52 "C:\Users\KADER\Desktop\New\ProductCatalogue\UnluCo.BlazorUI\Components\CategoryList.razor"
+       
+    [Parameter]
+    public int Id { get; set; }
+
+    public CategoryDto CategoryView { get; set; }
+
+    HttpClient client = new HttpClient();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var category = await client.GetAsync($"http://localhost:19383/api/Categories/{Id}");
+        CategoryView = JsonConvert.DeserializeObject<CategoryDto>(await category.Content.ReadAsStringAsync());
+
+    }
+
+
+
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

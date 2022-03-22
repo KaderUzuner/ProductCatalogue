@@ -10,7 +10,7 @@ namespace UnluCo.TestProject
 {
     public static class Data
     {
-        public static IList<Product> GetProductData()
+        public static IEnumerable<Product> GetProductData()
         {
 
             var result = new List<Product>

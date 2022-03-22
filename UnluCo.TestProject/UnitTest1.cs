@@ -35,8 +35,9 @@ namespace UnluCo.TestProject
             var repository = new ProductRepository(_context);
             var products = repository.GetAll();
 
-            Assert.NotEmpty(products);
-            Assert.Equal(4, products.Count());
+
+            Assert.NotEmpty((System.Collections.IEnumerable)products);
+            Assert.Equal(4, products.Id);
         }
 
 
@@ -46,7 +47,7 @@ namespace UnluCo.TestProject
         {
             var repository = new ProductRepository(_context);
             var products = repository.Get(x => x.ProductName == "Ayakkabý");
-            Assert.NotEmpty(products);
+            Assert.NotEmpty((System.Collections.IEnumerable)products);
         }
     }
 }
